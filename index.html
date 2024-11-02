@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,34 +7,36 @@
     
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
-            color: #333;
+            background-color: #000; /* Black background for Matrix effect */
+            color: #66cc66; /* Muted bright green text */
             display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
-            background-color: #3f51b5; /* Blue shade */
+            background-color: #001100; /* Dark green */
             color: white;
             padding: 20px 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             width: 100%;
         }
 
         .container {
             display: flex;
             flex-direction: row;
-            width: 100%;
+            flex-grow: 1; /* Make container take available space */
         }
 
         .sidebar {
-            background-color: #ffffff; /* White background */
+            background-color: #001100; /* Dark green */
             padding: 20px;
             width: 250px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
             margin: 20px;
         }
@@ -50,23 +51,23 @@
         }
 
         .sidebar ul li a {
-            color: #3f51b5; /* Blue shade */
+            color: #66cc66; /* Muted bright green */
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         .sidebar ul li a:hover {
-            color: #1976d2; /* Darker blue on hover */
+            color: #99ff99; /* Lighter green on hover */
         }
 
         .main-content {
             flex-grow: 1;
             padding: 20px;
             margin: 20px;
-            background-color: #ffffff; /* White background */
+            background-color: #001100; /* Dark green */
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .profile-pic {
@@ -75,21 +76,22 @@
             height: 150px;
             display: block;
             margin: 0 auto;
-            border: 3px solid #3f51b5; /* Blue border */
+            border: 3px solid #66cc66; /* Muted bright green border */
         }
 
         h2, h3 {
-            color: #3f51b5; /* Blue shade */
+            color: #66cc66; /* Muted bright green */
+            text-shadow: 1px 1px 0 #000; /* Shadow for depth */
         }
 
         footer {
-            background-color: #3f51b5; /* Blue shade */
+            background-color: #001100; /* Dark green */
             color: white;
             text-align: center;
             padding: 15px 0;
             position: relative;
             width: 100%;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
             margin-top: auto; /* Keeps footer at the bottom */
             font-style: italic; /* Change style to italic */
             font-size: 14px; /* Change font size */
@@ -98,14 +100,14 @@
 
         .social-links a {
             text-decoration: none;
-            color: #3f51b5; /* Blue shade */
+            color: #66cc66; /* Muted bright green */
             margin: 0 10px;
             font-size: 18px;
             transition: color 0.3s;
         }
 
         .social-links a:hover {
-            color: #1976d2; /* Darker blue on hover */
+            color: #99ff99; /* Lighter green on hover */
         }
     </style>
 </head>
@@ -142,7 +144,7 @@
             <section id="dreams" class="section">
                 <h3>Dreams and Aspirations</h3>
                 <p>My dream is to pursue a successful career in technology, particularly in networking. I want to be someone who creates innovative solutions, whether it's in cybersecurity, cloud computing, or other areas of IT. I’m always looking for opportunities to learn new things and grow my skill set.</p>
-                <p>Outside of tech, I'm also exploring life experiences, including personal relationships. Recently, I received a proposal, and I'm taking thoughtful steps toward balancing personal and professional goals.</p>
+                <p>Outside of tech, I'm also exploring life experiences, including personal relationships. I'm taking thoughtful steps toward balancing personal and professional goals.</p>
             </section>
 
             <section id="contact" class="section">
